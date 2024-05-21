@@ -1,0 +1,445 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+<nav class="navbar navbar-expand navbar-dark bg-dark border-bottom border-danger border-3">
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="img/logo.png" alt="Logo" width="170" height="80" class="d-inline-block align-text-top">
+        </a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="/" class="nav-link fs-4">Головна</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="/buy" class="nav-link fs-4">Купити</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="/sell" class="nav-link active fs-4">Продати</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="/info" class="nav-link fs-4">Контакти</a>
+            </li>
+        </ul>
+        <img src="img/user.png" alt="" height="50">
+    </div>
+</nav>
+
+<div class="container bg-light bg gradient border border-3 border-danger mb-5 mt-5 rounded-3 p-3">
+    <h1 class="mx-auto text-center mb-4">АВТО НА ПРОДАЖІ</h1>
+    <a href="" class="btn btn-lg btn-danger mb-4" data-bs-toggle="modal" data-bs-target="#modal">Продати</a>
+    <a href="" class="btn btn-lg btn-danger mb-4" data-bs-toggle="modal" data-bs-target="#modal2">Видалити</a>
+    <a href="" class="btn btn-lg btn-danger mb-4" data-bs-toggle="modal" data-bs-target="#modal3">Змінити</a>
+    <a href="" class="btn btn-lg btn-danger mb-4" data-bs-toggle="modal" data-bs-target="#modal4">Пошук</a>
+    <a href="" class="btn btn-lg btn-danger mb-4" data-bs-toggle="modal" data-bs-target="#modal5">Фільтр</a>
+    <table class="table table-light table-striped table-hover">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Виробник</th>
+                <th>Модель</th>
+                <th>Рік</th>
+                <th>Ціна</th>
+            </tr>
+        </thead>
+        <tbody class="table-group-divider">
+            <tr>
+                <td>{{cars.id1}}</td>
+                <td>{{cars.name1}}</td>
+                <td>{{cars.model1}}</td>
+                <td>{{cars.year1}}</td>
+                <td>{{cars.price1}}</td>
+            </tr>
+
+            <tr>
+                <td>{{cars.id2}}</td>
+                <td>{{cars.name2}}</td>
+                <td>{{cars.model2}}</td>
+                <td>{{cars.year2}}</td>
+                <td>{{cars.price2}}</td>
+            </tr>
+
+            <tr>
+                <td>{{cars.id3}}</td>
+                <td>{{cars.name3}}</td>
+                <td>{{cars.model3}}</td>
+                <td>{{cars.year3}}</td>
+                <td>{{cars.price3}}</td>
+            </tr>
+
+            <tr>
+                <td>{{cars.id4}}</td>
+                <td>{{cars.name4}}</td>
+                <td>{{cars.model4}}</td>
+                <td>{{cars.year4}}</td>
+                <td>{{cars.price4}}</td>
+            </tr>
+
+            <tr>
+                <td>{{cars.id5}}</td>
+                <td>{{cars.name5}}</td>
+                <td>{{cars.model5}}</td>
+                <td>{{cars.year5}}</td>
+                <td>{{cars.price5}}</td>
+            </tr>
+
+            <tr>
+                <td>{{cars.id6}}</td>
+                <td>{{cars.name6}}</td>
+                <td>{{cars.model6}}</td>
+                <td>{{cars.year6}}</td>
+                <td>{{cars.price6}}</td>
+            </tr>
+
+            <tr>
+                <td>{{cars.id7}}</td>
+                <td>{{cars.name7}}</td>
+                <td>{{cars.model7}}</td>
+                <td>{{cars.year7}}</td>
+                <td>{{cars.price7}}</td>
+            </tr>
+
+            <tr>
+                <td>{{cars.id8}}</td>
+                <td>{{cars.name8}}</td>
+                <td>{{cars.model8}}</td>
+                <td>{{cars.year8}}</td>
+                <td>{{cars.price8}}</td>
+            </tr>
+
+            <tr>
+                <td>{{cars.id9}}</td>
+                <td>{{cars.name9}}</td>
+                <td>{{cars.model9}}</td>
+                <td>{{cars.year9}}</td>
+                <td>{{cars.price9}}</td>
+            </tr>
+
+            <tr>
+                <td>{{cars.id10}}</td>
+                <td>{{cars.name10}}</td>
+                <td>{{cars.model10}}</td>
+                <td>{{cars.year10}}</td>
+                <td>{{cars.price10}}</td>
+            </tr>
+
+            <tr>
+                <td>{{cars.id11}}</td>
+                <td>{{cars.name11}}</td>
+                <td>{{cars.model11}}</td>
+                <td>{{cars.year11}}</td>
+                <td>{{cars.price11}}</td>
+            </tr>
+
+            <tr>
+                <td>{{cars.id12}}</td>
+                <td>{{cars.name12}}</td>
+                <td>{{cars.model12}}</td>
+                <td>{{cars.year12}}</td>
+                <td>{{cars.price12}}</td>
+            </tr>
+
+            <tr>
+                <td>{{cars.id13}}</td>
+                <td>{{cars.name13}}</td>
+                <td>{{cars.model13}}</td>
+                <td>{{cars.year13}}</td>
+                <td>{{cars.price13}}</td>
+            </tr>
+
+            <tr>
+                <td>{{cars.id14}}</td>
+                <td>{{cars.name14}}</td>
+                <td>{{cars.model14}}</td>
+                <td>{{cars.year14}}</td>
+                <td>{{cars.price14}}</td>
+            </tr>
+
+            <tr>
+                <td>{{cars.id15}}</td>
+                <td>{{cars.name15}}</td>
+                <td>{{cars.model15}}</td>
+                <td>{{cars.year15}}</td>
+                <td>{{cars.price15}}</td>
+            </tr>
+
+            <tr>
+                <td>{{cars.id16}}</td>
+                <td>{{cars.name16}}</td>
+                <td>{{cars.model16}}</td>
+                <td>{{cars.year16}}</td>
+                <td>{{cars.price16}}</td>
+            </tr>
+
+            <tr>
+                <td>{{cars.id17}}</td>
+                <td>{{cars.name17}}</td>
+                <td>{{cars.model17}}</td>
+                <td>{{cars.year17}}</td>
+                <td>{{cars.price17}}</td>
+            </tr>
+
+            <tr>
+                <td>{{cars.id18}}</td>
+                <td>{{cars.name18}}</td>
+                <td>{{cars.model18}}</td>
+                <td>{{cars.year18}}</td>
+                <td>{{cars.price18}}</td>
+            </tr>
+
+            <tr>
+                <td>{{cars.id19}}</td>
+                <td>{{cars.name19}}</td>
+                <td>{{cars.model19}}</td>
+                <td>{{cars.year19}}</td>
+                <td>{{cars.price19}}</td>
+            </tr>
+
+            <tr>
+                <td>{{cars.id20}}</td>
+                <td>{{cars.name20}}</td>
+                <td>{{cars.model20}}</td>
+                <td>{{cars.year20}}</td>
+                <td>{{cars.price20}}</td>
+            </tr>
+
+            <tr>
+                <td>{{cars.id21}}</td>
+                <td>{{cars.name21}}</td>
+                <td>{{cars.model21}}</td>
+                <td>{{cars.year21}}</td>
+                <td>{{cars.price21}}</td>
+            </tr>
+
+            <tr>
+                <td>{{cars.id22}}</td>
+                <td>{{cars.name22}}</td>
+                <td>{{cars.model22}}</td>
+                <td>{{cars.year22}}</td>
+                <td>{{cars.price22}}</td>
+            </tr>
+
+            <tr>
+                <td>{{cars.id23}}</td>
+                <td>{{cars.name23}}</td>
+                <td>{{cars.model23}}</td>
+                <td>{{cars.year23}}</td>
+                <td>{{cars.price23}}</td>
+            </tr>
+
+            <tr>
+                <td>{{cars.id24}}</td>
+                <td>{{cars.name24}}</td>
+                <td>{{cars.model24}}</td>
+                <td>{{cars.year24}}</td>
+                <td>{{cars.price24}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="modal fade" id="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <h2 class="modal-header">Введіть дані вашого авто:</h2>
+                <div class="modal-body">
+                    <form method="post" novalidate action="/sell/insert" id="form1">
+                        <label for="carManufacturer" class="form-label">Виробник</label>
+                        <input type="text" name="carManufacturer" class="form-control" required>
+                        <label for="carModel" class="form-label">Модель</label>
+                        <input type="text" name="carModel" class="form-control" required>
+                        <label for="carYear" class="form-label">Рік</label>
+                        <input type="number" name="carYear" class="form-control" required>
+                        <label for="carPrice" class="form-label">Ціна</label>
+                        <input type="number" name="carPrice" class="form-control" required>
+                        <div class="invalid-feedback">Введіть корректні дані</div>
+                        <input type="submit" class="btn btn-danger mt-3" value="Готово" id="submit">
+                    </form>
+                </div>
+                <div class="modal-footer"><button class="btn btn-danger" data-bs-dismiss="modal">Закрити</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <h2 class="modal-header">Введіть ID авто, яке хочете видалити:</h2>
+                <div class="modal-body">
+                    <form method="post" novalidate action="/sell/delete" id="form2">
+                        <label for="carID" class="form-label">ID</label>
+                        <input type="number" name="carID" class="form-control" required>
+                        <div class="invalid-feedback">Введіть корректні дані</div>
+                        <input type="submit" class="btn btn-danger mt-3" value="Готово" id="submit">
+                    </form>
+                </div>
+                <div class="modal-footer"><button class="btn btn-danger" data-bs-dismiss="modal">Закрити</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <h2 class="modal-header">Введіть ID авто, дані якого хочете змінити, та самі дані:</h2>
+                <div class="modal-body">
+                    <form method="post" novalidate action="/sell/edit" id="form3">
+                        <label for="carID" class="form-label">ID</label>
+                        <input type="number" name="carID" class="form-control" required>
+                        <label for="carManufacturer" class="form-label">Виробник</label>
+                        <input type="text" name="carManufacturer" class="form-control" required>
+                        <label for="carModel" class="form-label">Модель</label>
+                        <input type="text" name="carModel" class="form-control" required>
+                        <label for="carYear" class="form-label">Рік</label>
+                        <input type="number" name="carYear" class="form-control" required>
+                        <label for="carPrice" class="form-label">Ціна</label>
+                        <input type="number" name="carPrice" class="form-control" required>
+                        <div class="invalid-feedback">Введіть корректні дані</div>
+                        <input type="submit" class="btn btn-danger mt-3" value="Готово" id="submit">
+                    </form>
+                </div>
+                <div class="modal-footer"><button class="btn btn-danger" data-bs-dismiss="modal">Закрити</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal4">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <h2 class="modal-header">Введіть виробника, авто якого ви хочете знайти:</h2>
+                <div class="modal-body">
+                    <form method="post" novalidate action="/sell/search" id="form4">
+                        <label for="carManufacturer" class="form-label">Виробник</label>
+                        <input type="text" name="carManufacturer" class="form-control" required>
+                        <div class="invalid-feedback">Введіть корректні дані</div>
+                        <input type="submit" class="btn btn-danger mt-3" value="Готово" id="submit">
+                    </form>
+                </div>
+                <div class="modal-footer"><button class="btn btn-danger" data-bs-dismiss="modal">Закрити</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal5">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <h2 class="modal-header">Оберіть фільтр:</h2>
+                <div class="modal-body">
+                    <a href="" class="btn btn-lg btn-danger mb-4" data-bs-toggle="modal" data-bs-target="#modal6">За
+                        ціною</a>
+                    <a href="" class="btn btn-lg btn-danger mb-4" data-bs-toggle="modal" data-bs-target="#modal7">За
+                        роком</a>
+                </div>
+                <div class="modal-footer"><button class="btn btn-danger" data-bs-dismiss="modal">Закрити</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal6">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <h2 class="modal-header">Оберіть діапазон:</h2>
+                <div class="modal-body">
+                    <form method="post" novalidate action="/sell/pFilter" id="form6">
+                        <label for="priceMin" class="form-label">Більше ніж</label>
+                        <input type="number" name="priceMin" class="form-control" required>
+                        <label for="priceMax" class="form-label">Менше ніж</label>
+                        <input type="number" name="priceMax" class="form-control" required>
+                        <div class="invalid-feedback">Введіть корректні дані</div>
+                        <input type="submit" class="btn btn-danger mt-3" value="Готово" id="submit">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal5">Назад</button>
+                    <button class="btn btn-danger" data-bs-dismiss="modal">Закрити</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal7">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <h2 class="modal-header">Оберіть діапазон:</h2>
+                <div class="modal-body">
+                    <form method="post" novalidate action="/sell/yFilter" id="form7">
+                        <label for="yearMin" class="form-label">Більше ніж</label>
+                        <input type="number" name="yearMin" class="form-control" required>
+                        <label for="yearMax" class="form-label">Менше ніж</label>
+                        <input type="number" name="yearMax" class="form-control" required>
+                        <div class="invalid-feedback">Введіть корректні дані</div>
+                        <input type="submit" class="btn btn-danger mt-3" value="Готово" id="submit">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal5">Назад</button>
+                    <button class="btn btn-danger" data-bs-dismiss="modal">Закрити</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const form1 = document.querySelector("#form1")
+    const form2 = document.querySelector("#form2")
+    const form3 = document.querySelector("#form3")
+    const form4 = document.querySelector("#form4")
+    const form6 = document.querySelector("#form6")
+    const form7 = document.querySelector("#form7")
+
+    form1.addEventListener('submit', e => {
+        if (!form1.checkValidity()) {
+            e.preventDefault()
+        }
+
+        form1.classList.add('was-validated')
+    })
+    form2.addEventListener('submit', e => {
+        if (!form2.checkValidity()) {
+            e.preventDefault()
+        }
+
+        form2.classList.add('was-validated')
+    })
+    form3.addEventListener('submit', e => {
+        if (!form3.checkValidity()) {
+            e.preventDefault()
+        }
+
+        form3.classList.add('was-validated')
+    })
+    form4.addEventListener('submit', e => {
+        if (!form4.checkValidity()) {
+            e.preventDefault()
+        }
+
+        form4.classList.add('was-validated')
+    })
+    form6.addEventListener('submit', e => {
+        if (!form6.checkValidity()) {
+            e.preventDefault()
+        }
+
+        form6.classList.add('was-validated')
+    })
+    form7.addEventListener('submit', e => {
+        if (!form7.checkValidity()) {
+            e.preventDefault()
+        }
+
+        form7.classList.add('was-validated')
+    })
+</script>
+
+
+
+
+
+<div class="navbar navbar-expand border-top border-danger border-3 bg-dark">
+    <div class="col text-bg-dark fs-5 text-center p-4">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus nihil provident voluptas laudantium, iste
+        aperiam iusto, tempora eveniet voluptatem error rem. Necessitatibus aliquid commodi, provident inventore
+        similique quasi perferendis consequuntur?
+    </div>
+</div>
